@@ -29,6 +29,7 @@ body{
 .sushi {
     width: 100px;
     height: 105px;
+    filter: drop-shadow(0 0 0.20rem rgba(26, 26, 26, 0.801));
 }
 .sushiDiv{
     /* width: 7rem; */
