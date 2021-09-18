@@ -1,4 +1,7 @@
+let switchToggle = document.querySelector('#switch');
 let plate = document.querySelector(".inside")
+let gridFeatures = document.querySelector(".grid-features")
+let flexFeatures = document.querySelector(".flex-features")
 let count = 3
 function sushiMaker (amount){
 
@@ -27,18 +30,20 @@ function sushiMaker (amount){
 
 sushiMaker(15)
 
-let switchToggle = document.querySelector('#switch');
 switchToggle.onchange = function(){
     if(switchToggle.checked){
         plate.classList.remove('grid-selection');
         plate.classList.add('flex-selection');
-        console.log(switchToggle.classList)
-        console.log(switchToggle)
+        gridFeatures.style.display = "none"
+        flexFeatures.style.display = "block"
+        
     } else {
         plate.classList.remove('flex-selection');
         plate.classList.add('grid-selection');
-        console.log(switchToggle.classList)
-        console.log(switchToggle)
+
+        gridFeatures.style.display = "block"
+
+        flexFeatures.style.display = "none"
     }
 }
 
