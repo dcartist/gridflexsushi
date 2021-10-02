@@ -8,7 +8,8 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url("../images/wood.jpg");
+    /* background-image: url("../images/wood.jpg"); */
+    background-color: rgb(95, 57, 32);
     background-size: cover;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
