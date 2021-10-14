@@ -10,11 +10,11 @@ function sushiMaker(amount) {
     for (let i = 0; i < amount; i++) {
         let plate = document.querySelector(".inside")
         let sushi = document.createElement('img')
-        if (i < 5 & i > -1) {
+        if (i < 4 & i > -1) {
             sushi.src = `images/sushi/sushi-03_resize.png`
             sushi.classList = "sushi"
             plate.appendChild(sushi)
-        } else if (i > 4 & i < 10) {
+        } else if (i > 3 & i < 8) {
             sushi.src = `images/sushi/sushi-04_resize.png`
             sushi.classList = "sushi"
             plate.appendChild(sushi)
@@ -29,7 +29,7 @@ function sushiMaker(amount) {
 
 }
 
-sushiMaker(15)
+sushiMaker(12)
 
 switchToggle.onchange = function () {
     if (switchToggle.checked) {
